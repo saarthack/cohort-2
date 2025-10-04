@@ -1,72 +1,66 @@
-@font-face {
-  font-family: seb;
-  src: url(./sf-pro-text_regular.woff2);
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'helvetica neue';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
 }
-
 html,
 body {
+    height: 100%;
+    width: 100%;
+}
+#main{
   height: 100%;
   width: 100%;
-}
-
-
-#nav {
-  height: 60px;
-  width: 100%;
-  background-color: rgb(32, 32, 32);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-#nav h4 {
-  color: white;
-  font-weight: 300;
-}
-
-#center{
-  height: 80%;
-  width: 100%;
-  padding: 50px;
-  text-align: center;
-  background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_large_2x.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#center h1{
-  color: white;
-  font-size: 60px;
-  font-weight: 600;
-}
-
-#center h5{
-  color: white;
-  font-size: 35px;
-  font-weight: 300;
-}
-
-#links{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  background-color: lightblue;
   padding: 20px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-button{
-  padding: 15px 24px;
+
+.card{
+  height: 300px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.22);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.card img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card h2{
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.card p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  text-align: center;
+}
+.card button{
   border-radius: 50px;
-  background-color: royalblue;
-  color: white;
-  font-weight: 300;
+  padding: 10px 30px;
+  background-color: rgb(36, 182, 255);
   border: none;
-  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  border: 2px solid rgb(36, 182, 255);
+}
+
+.card button:hover{
+  background-color: transparent;
+  color: rgb(36, 182, 255);
 }
