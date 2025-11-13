@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'helvetica neue';
+    color: #fff;
 }
 html,
 body {
@@ -10,23 +11,15 @@ body {
     width: 100%;
 }
 
-
-.parent{
-  background-color: darkslategray;
-  width:60%;
-  margin: 20px;
-  padding: 20px;
-  font-size: 20px;
+body{
+  background-color: #111;
 }
 h2{
-  font-size: 3em;
+  font-size: 50px;
 }
-h4{
-  font-size: 2em;
-}
-h6{
-  font-size: 1em;
-}
-p{
-  font-size: 0.5em;
+
+button{
+  background-color: crimson;
+  padding: 10px 20px;
+  margin-top: 20px;
 }
