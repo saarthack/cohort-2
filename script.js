@@ -1,47 +1,26 @@
-var arr = [
-    {
-        team: 'CSK',
-        primary: 'yellow',
-        secondary: 'blue',
-    },
-    {
-        team: 'RCB',
-        primary: 'red',
-        secondary: 'black'
-    },
-    {
-        team: 'MI',
-        primary: 'blue',
-        secondary: 'gold'
-    },
-    {
-        team: 'KKR',
-        primary: 'purple',
-        secondary: 'gold'
-    },
-    {
-        team: 'SRH',
-        primary: 'orange',
-        secondary: 'black'
-    },
-    {
-        team: 'PBKS',
-        primary: 'crimson',
-        secondary: 'silver'
-    },
-]
-
-
 var btn = document.querySelector('button')
-var h1 = document.querySelector('h1')
 var main = document.querySelector('main')
 
-btn.addEventListener('click',function(){
+var arr = ['Hey! I am Sarthak','Sheryians is Best.','Anubhav is handsome','harsh bhaiya is great.','JS is Love','Keep practicing guys...']
 
-    var winner = arr[Math.floor(Math.random()*arr.length)]
+btn.addEventListener('click',function(){    
 
-    h1.innerHTML = winner.team
-    h1.style.backgroundColor = winner.secondary
-    main.style.backgroundColor = winner.primary
+    var h1 = document.createElement('h1')
     
+    var x = Math.random()*80
+    var y = Math.random()*80
+    var rot = Math.random()*360
+    var scl = Math.random()*3
+    var a = Math.floor(Math.random()*arr.length)
+
+    h1.innerHTML = arr[a]
+
+    h1.style.position = 'absolute'
+
+    h1.style.left = x+'%'
+    h1.style.top = y+'%'
+    h1.style.rotate = rot+'deg'
+    h1.style.scale = scl
+    
+    main.appendChild(h1)
 })
