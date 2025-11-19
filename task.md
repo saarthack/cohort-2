@@ -1,4 +1,4 @@
-setTimeout - delay
-setInterval - controlled loop
+5 Projects - https://www.youtube.com/watch?v=_7IR39vOKfU&t=3890s
 
-Task - Make a downloading effect like this. 
+3 Projects - https://www.youtube.com/watch?v=_rmSp20X4wo
+
