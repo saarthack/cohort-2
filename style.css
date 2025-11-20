@@ -15,50 +15,40 @@ main {
   height: 100%;
   width: 100%;
   background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card{
-  background-color: white;
-  width: 200px;
-  border-radius: 10px;
   padding: 20px;
-  position: absolute;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.card div{
-  position: relative;
-  overflow: hidden;
-}
-.card img{
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  margin-bottom: 10px;
+.card{
+  /* height: 350px; */
+  width: 280px;
+  background-color: white;
+  text-align: center;
+  padding: 30px;
   border-radius: 10px;
 }
-.card h2{
-  font-size: 20px;
-  text-align: center;
+
+.card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-.card i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  opacity: 0;
-  
-  
-  background-image: url(https://t3.ftcdn.net/jpg/01/14/77/58/360_F_114775804_4yfG9qbKp1NlF1RLo4MUlGIVj9MWhnnc.jpg);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-
-  transform: translate(-50%,-50%) scale(0) rotate(-60deg);
-  transition: all cubic-bezier(.65,1,.77,1.44) 0.4s;
+.card h3{
+  font-size: 26px;
+  white-space: nowrap;
+}
+.card h4{
+  font-size: 18px;
+  margin-top: 10px;
+  color: crimson;
+  margin-bottom: 10px;
 }
 
-
+.card p{
+  font-size: 14px;
+}
