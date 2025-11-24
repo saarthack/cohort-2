@@ -13,14 +13,22 @@ body {
 
 body{
   background-color: black;
+  padding: 30px;
+}
+
+.elem{
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-h1{
-  font-size: 80px;
+  justify-content: space-evenly;
+  padding: 20px;
   background-color: #333;
-  padding: 20px 40px;
-  border-radius: 15px;
-  font-family: monospace;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+button{
+  background-color: royalblue;
+  color: #fff;
+  padding: 10px 20px;
+  
 }

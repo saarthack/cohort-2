@@ -1,9 +1,14 @@
-var aud = new Audio('./31.mp3')
+var allBtn = document.querySelectorAll('button')
 
-var h1 = document.querySelector('h1')
-
-h1.addEventListener('click',function(dets){
-    if(dets.code == 'KeyD'){
-        aud.play()
-    }
+allBtn.forEach(function(elem){
+    elem.addEventListener('click',function(){
+        
+        if(elem.innerHTML == 'Add Friend'){
+            elem.innerHTML = 'Remove'
+        }else{
+            elem.innerHTML = 'Add Friend'
+        }
+        
+    })
+    
 })
